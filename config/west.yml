@@ -2,7 +2,7 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: module_keys_de
+    - name: zmk-feature-german
       url-base: https://github.com/Jan-p-w
     # Additional modules containing boards/shields/custom code can be listed here as well
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
@@ -11,8 +11,8 @@ manifest:
       remote: zmkfirmware
       revision: main
       import: app/west.yml
-    - name: zmk-config
-      remote: module_keys_de
+    - name: zmk-feature-german
+      remote: zmk-feature-german
       revision: main
       
       
