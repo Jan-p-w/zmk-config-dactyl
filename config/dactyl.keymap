@@ -9,6 +9,8 @@
 #include <dt-bindings/zmk/bt.h>
 #include <locale/keys_de.h>
 
+#define DEFAULT   0
+#define LOWER     1
 / {
         keymap {
                 compatible = "zmk,keymap";
@@ -20,13 +22,13 @@
 // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
 //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
                         bindings = <
-   &kp ESC   &kp DE_N1    &kp N2     &kp N3 		&kp N4     &kp N5   		&kp N6 &kp N7  &kp N8     &kp N9   &kp N0    &kp BSPC
-   &kp TAB   &kp Q        &kp W      &kp E          &kp R      &kp T    		&kp H  &kp J   &kp K      &kp L    &kp SEMI  &kp SQT
-   &kp CAPS  &kp A        &kp S      &kp D          &kp F      &kp G    		&kp N  &kp M   &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-   &kp LCTRL &kp DE_Y     &kp X      &kp C          &kp V      &kp B    		&kp N  &kp M   &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                          &kp CARET  &kp LESS_THAN  &kp SPACE  &mo 1    		&kp N  &kp M   &kp COMMA  &kp DOT
-											        &kp LSHFT  &kp LEFT_ALT     &kp N  &kp M
-														       &kp LEFT_WIN     &kp N
+   &kp ESC   &kp DE_N1       &kp DE_N2     &kp DE_N3 		 &kp DE_N4       &kp DE_N5   		&kp DE_N6 &kp DE_N7  &kp DE_N8     &kp DE_N9   &kp DE_N0       &kp DE_BSPC
+   &kp TAB   &kp DE_Q        &kp DE_W      &kp DE_E          &kp DE_R        &kp DE_T    		&kp DE_Z  &kp DE_U   &kp DE_I      &kp DE_O    &kp DE_P        &kp DE_DE_U_UMLAUT 
+   &kp CAPS  &kp DE_A        &kp DE_S      &kp DE_D          &kp DE_F        &kp DE_G    		&kp DE_H  &kp DE_J   &kp DE_K      &kp DE_L    &kp DE_O_UMLAUT &kp DE_A_UMLAUT
+   &kp LCTRL &kp DE_Y        &kp DE_X      &kp DE_C          &kp DE_V        &kp DE_B    		&kp DE_N  &kp DE_M   &kp DE_COMMA  &kp DE_DOT  &kp DE_UNDER    &kp DE_ESC
+                             &kp DE_CARET  &kp DE_LESS_THAN  &kp DE_SPACE    &kp DE_LEFT_WIN    &kp DE_N  &kp DE_M   &kp DE_COMMA  &kp DE_DOT
+											                 &kp DE_LSHFT    &kp DE_LEFT_ALT    &kp DE_N  &kp DE_M
+														                     &mo LOWER          &kp DE_N
                         >;
                 };
                 lower_layer {
@@ -39,7 +41,7 @@
    &kp TAB    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8   &kp N9    &kp N0 &kp BSPC
    &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT &kp DOWN &kp UP   &kp RIGHT &trans &trans
    &kp LSHFT  &trans       &trans       &trans       &trans       &trans         &trans   &trans   &trans   &trans    &trans &trans
-   &trans	  &trans	   &trans       &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp RALT &trans    &trans &trans
+   &trans	  &kp Z	       &trans       &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp RALT &trans    &trans &trans
 						   &trans       &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp RALT &trans
 													 &trans       &kp SPACE      &kp RET  &trans
 																  &kp SPACE      &kp RET
