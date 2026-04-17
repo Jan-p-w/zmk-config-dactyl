@@ -32,13 +32,13 @@
                 lower_layer {
 
                         bindings = <
-	&bootloader    	&kp F1      	&kp F2    		&kp F3     		&kp F4       	&kp F5         		&kp F6  &kp F7   &kp F8   	&kp F9    	&kp F10 &kp F11
-	&trans  		&trans  		&HOME    		&kp UP  		&END			&trans				&trans	&trans   &KP_N7   	&KP_N8    	&KP_N9 	&kp F12
-	&trans         	&trans      	&LEFT     		&kp DOWN       	&kp RIGHT       &trans         		&trans  &trans   &KP_N4   	&KP_N5    	&KP_N6 	&trans
-	&bt BT_CLR     	&bt BT_SEL 0 	&bt BT_SEL 1 	&bt BT_SEL 2 	&bt BT_SEL 3 	&bt BT_SEL 4		&trans  &trans   &KP_N1   	&KP_N2   	&KP_N3 	&trans 
-									&trans       	&trans       	&DE_SPACE      	&LEFT_WIN         	&BSPC  	&DEL   	 &kp KP_N0  &DOT
-																	&LSHFT       	&LEFT_CONTROL      	&ENTER  &LEFT_ALT
-																					&trans        		&trans
+	&bootloader    	&kp F1      	&kp F2    			&kp F3     		&kp F4       	&kp F5         				&kp F6  	&kp F7   &kp F8   		&kp F9    	&kp F10 	&kp F11
+	&trans  		&trans  		&kp HOME    		&kp UP  		&kp END			&trans						&trans		&trans   &kp KP_N7   	&kp KP_N8   &kp KP_N9 	&kp F12
+	&trans         	&trans      	&kp LEFT     		&kp DOWN       	&kp RIGHT       &trans         				&trans  	&trans   &kp KP_N4   	&kp KP_N5   &kp KP_N6 	&trans
+	&bt BT_CLR     	&bt BT_SEL 0 	&bt BT_SEL 1 		&bt BT_SEL 2 	&bt BT_SEL 3 	&bt BT_SEL 4				&trans  	&trans   &kp KP_N1   	&kp KP_N2   &kp KP_N3 	&trans 
+									&trans       		&trans       	&kp DE_SPACE    &kp LEFT_WIN         		&kp BSPC  	&kp DEL  &kp KP_N0  	&DOT
+																		&kp LSHFT       &kp LEFT_CONTROL      		&kp ENTER  	&kp LEFT_ALT
+																						&trans        				&trans
                         >;
                 };
 				raise_layer {
