@@ -36,7 +36,7 @@
 	&trans  		&trans  		&kp HOME    		&kp UP  		&kp END			&trans						&trans		&trans   &kp KP_N7   	&kp KP_N8   &kp KP_N9 	&kp F12
 	&trans         	&trans      	&kp LEFT     		&kp DOWN       	&kp RIGHT       &trans         				&trans  	&trans   &kp KP_N4   	&kp KP_N5   &kp KP_N6 	&trans
 	&bt BT_CLR     	&bt BT_SEL 0 	&bt BT_SEL 1 		&bt BT_SEL 2 	&bt BT_SEL 3 	&bt BT_SEL 4				&trans  	&trans   &kp KP_N1   	&kp KP_N2   &kp KP_N3 	&trans 
-									&trans       		&trans       	&kp DE_SPACE    &kp LEFT_WIN         		&kp BSPC  	&kp DEL  &kp KP_N0  	&DOT
+									&trans       		&trans       	&kp DE_SPACE    &kp LEFT_WIN         		&kp BSPC  	&kp DEL  &kp KP_N0  	&kp DOT
 																		&kp LSHFT       &kp LEFT_CONTROL      		&kp ENTER  	&kp LEFT_ALT
 																						&trans        				&trans
                         >;
